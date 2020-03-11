@@ -55,9 +55,21 @@
                             <a href="index.html"><i class="halflings-icon home"></i></a>
                             <a href="#"><i class="halflings-icon cog"></i></a>
                         </div>
+
+                        <?php
+
+                        $message = Session::get('message');
+                            if($message){
+                                echo $message;
+                                Session::put('message', null);
+                            }
+
+                        ?>
+
+
                         <h2>Login to your account</h2>
-                        <form class="form-horizontal" action="" method="post">
-                            
+                        <form class="form-horizontal" action="{{url('/admin-dashboard')}}" method="post">
+                            @csrf
 
                                 <div class="input-prepend" title="Username">
                                     <span class="add-on"><i class="halflings-icon user"></i></span>
