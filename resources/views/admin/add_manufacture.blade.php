@@ -8,7 +8,7 @@
 				</li>
 				<li>
 					<i class="icon-edit"></i>
-					<a href="#">add category</a>
+					<a href="#">add manufacture</a>
 				</li>
 			</ul>
 
@@ -21,7 +21,7 @@
 			<div class="row-fluid sortable">
 				<div class="box span12">
 					<div class="box-header" data-original-title>
-						<h2><i class="halflings-icon edit"></i><span class="break"></span>add category</h2>
+						<h2><i class="halflings-icon edit"></i><span class="break"></span>add manufacture</h2>
 						<div class="box-icon">
 							<a href="#" class="btn-setting"><i class="halflings-icon wrench"></i></a>
 							<a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
@@ -29,32 +29,32 @@
 						</div>
 					</div>
 					<div class="box-content">
-						<form class="form-horizontal" action="{{ url('save-category') }}" method="post">
+						<form class="form-horizontal" action="{{ url('save-manufacture') }}" method="post">
 							@csrf
 						  <fieldset>
 							<div class="control-group">
-							  <label class="control-label" for="date01">category name</label>
+							  <label class="control-label" for="date01">manufacture name</label>
 							  <div class="controls">
-								<input type="text" name="category_name" class="input-xlarge " >
+								<input type="text" name="manufacture_name" class="input-xlarge " >
 							  </div>
 							</div>
 
 							<div class="control-group">
 							  <label class="control-label" for="fileInput">cate description</label>
 							  <div class="controls">
-								<textarea name="category_description" class="cleditor" id="textarea2" rows="3"></textarea>
+								<textarea name="manufacture_description" class="cleditor" id="textarea2" rows="3"></textarea>
 							  </div>
 							</div>
 
 							<div class="control-group">
 							  <label class="control-label" for="date01">publication status</label>
 							  <div class="controls">
-								<input type="checkbox" value="1" name="pbulication_status"  >
+								<input type="checkbox" value="1" name="publication_status"  >
 							  </div>
 							</div>
 
 							<div class="form-actions">
-							  <button type="submit" class="btn btn-primary">add category</button>
+							  <button type="submit" class="btn btn-primary">add manufacture</button>
 							  <button type="reset" class="btn">Cancel</button>
 							</div>
 						  </fieldset>

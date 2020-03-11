@@ -336,8 +336,8 @@
                         <ul class="nav nav-tabs nav-stacked main-menu">
                             <li><a href="{{url('dashboard')}}"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>	
                             <li><a href="{{url('all-category')}}"><i class="icon-envelope"></i><span class="hidden-tablet"> all category</span></a></li>
-                            <li><a href="{{url('add-category')}}"><i class="icon-tasks"></i><span class="hidden-tablet"> ad category</span></a></li>
-                            <li><a href="ui.html"><i class="icon-eye-open"></i><span class="hidden-tablet"> add brand</span></a></li>
+                            <li><a href="{{url('add-manufacture')}}"><i class="icon-tasks"></i><span class="hidden-tablet"> ad category</span></a></li>
+                            <li><a href="{{url('add-manufacture')}}"><i class="icon-eye-open"></i><span class="hidden-tablet"> add Manufacture</span></a></li>
                             
                             <li>
                                 <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> products</span><span class="label label-important"> new </span></a>
