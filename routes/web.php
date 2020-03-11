@@ -24,3 +24,8 @@ Route::get('logout', 'SuperAdminController@logout');
 Route::get('/admin', 'AdminController@index');
 Route::get('/dashboard', 'AdminController@show_dashboard');
 Route::post('/admin-dashboard', 'AdminController@dashboard');
+
+//category
+Route::get('/all-category', 'CategoryController@index');
+Route::get('/add-category', 'CategoryController@create');
+Route::post('/save-category', 'CategoryController@store');
