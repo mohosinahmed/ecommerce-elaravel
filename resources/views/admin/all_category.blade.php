@@ -1,5 +1,11 @@
 @extends('admin_layout')
 @section('admin_content')
+
+@if(session()->has('message'))
+    <div class="alert alert-success">
+        {{ session()->get('message') }}
+    </div>
+@endif
 <table class="table table-dark">
   <thead>
     <tr>
@@ -25,9 +31,14 @@
       	@endif
       </td>
       <td>
-      	<a href="" class="text-susscess">view</a> |
-      	<a href="" class="text-susscess">edit</a> |
-      	<a href="" class="text-susscess">delet</a> 
+      	@if($category->pbulication_status==1)
+      		<a href="{{url('uncative_category/'.$category->category_id)}}" class="text-susscess">inactive</a>
+      	@else
+      		<a href="{{url('active_category/'.$category->category_id)}}" class="text-susscess">active</a>
+      	@endif
+      	 |
+      	<a href="{{ url('/category/'.$category->category_id.'/edit')}}" class="text-susscess">edit</a> |
+      	<a href="{{url('category/'.$category->category_id.'/delete')}}" class="text-susscess">delete</a> 
       </td>
     </tr>
 

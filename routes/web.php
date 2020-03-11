@@ -29,3 +29,8 @@ Route::post('/admin-dashboard', 'AdminController@dashboard');
 Route::get('/all-category', 'CategoryController@index');
 Route::get('/add-category', 'CategoryController@create');
 Route::post('/save-category', 'CategoryController@store');
+Route::get('/uncative_category/{category_id}', 'CategoryController@unactive_category');
+Route::get('/active_category/{category_id}', 'CategoryController@active_category');
+Route::get('/category/{id}/edit', 'CategoryController@edit_category');
+Route::post('/category/{id}/edit', 'CategoryController@update_category');
+Route::get('/category/{id}/delete', 'CategoryController@delete_category');
